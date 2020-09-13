@@ -34,3 +34,5 @@ angular-http/e2e/*.map
 angular-http/.DS_Store/
 
 # End of https://www.toptal.com/developers/gitignore/api/angular
+
+serverfake/node_modules/
