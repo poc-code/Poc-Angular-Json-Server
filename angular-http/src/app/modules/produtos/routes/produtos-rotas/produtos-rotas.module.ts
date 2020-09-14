@@ -6,17 +6,18 @@ import { ListaProdutoComponent } from '../../components/produtos/lista-produto/l
 import { EdicaoProdutoComponent } from '../../components/produtos/edicao-produto/edicao-produto.component';
 import { DetalheProdutoComponent } from '../../components/produtos/detalhe-produto/detalhe-produto.component';
 import { Routes, RouterModule } from '@angular/router';
+import { InicioProdutoComponent } from '../../components/produtos/inicio-produto/inicio-produto.component';
 
 
 const produtosrotas : Routes = [
   {
       path: '', 
-      component: ListaCategoriaComponent,
+      component: InicioProdutoComponent,
       data: { tittle:'Produtos'},
       children: [
         { path: 'categoria/home', component: ListaCategoriaComponent },
-        { path: 'categoria/edicao', component: EdicaoCategoriaComponent },
-        { path: '', component: ListaCategoriaComponent },
+        { path: 'categoria/:id', component: EdicaoCategoriaComponent },
+        { path: '', component: InicioProdutoComponent },
         { path: 'edicao', component: EdicaoProdutoComponent },
         { path: 'detalhe', component: DetalheProdutoComponent },
       ]
@@ -25,7 +26,7 @@ const produtosrotas : Routes = [
 
 
 @NgModule({
-  declarations: [],
+  declarations: [ ],
   imports: [
     CommonModule,
     RouterModule.forChild(produtosrotas)

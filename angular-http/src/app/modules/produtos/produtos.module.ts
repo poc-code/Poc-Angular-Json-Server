@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule  } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ListaCategoriaComponent } from './components/categorias/lista-categoria/lista-categoria.component';
 import { EdicaoCategoriaComponent } from './components/categorias/edicao-categoria/edicao-categoria.component';
@@ -8,18 +9,25 @@ import { EdicaoProdutoComponent } from './components/produtos/edicao-produto/edi
 import { DetalheProdutoComponent } from './components/produtos/detalhe-produto/detalhe-produto.component';
 import { ProdutosRotasModule } from './routes/produtos-rotas/produtos-rotas.module';
 import { InicioProdutoComponent } from './components/produtos/inicio-produto/inicio-produto.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
-    ListaCategoriaComponent, 
-    EdicaoCategoriaComponent,
+     ListaCategoriaComponent, 
+     EdicaoCategoriaComponent,
      DetalheCategoriaComponent, 
      ListaProdutoComponent, 
      EdicaoProdutoComponent, 
-     DetalheProdutoComponent, InicioProdutoComponent],
+     InicioProdutoComponent
+    ],
   imports: [
     CommonModule,
-    ProdutosRotasModule
+    FormsModule,
+    ProdutosRotasModule,
+    NgbModule
+  ],
+  exports:[
+    EdicaoCategoriaComponent
   ]
 })
 export class ProdutosModule { }

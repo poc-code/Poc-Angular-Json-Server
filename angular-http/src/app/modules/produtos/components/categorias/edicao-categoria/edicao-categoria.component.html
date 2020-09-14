@@ -1,1 +1,23 @@
 <p>edicao-categoria works!</p>
+<div>
+    <span hidden>UserId: {{userId}}</span>
+</div>
+<form id="add-form" (ngSubmit)="f.form.valid && feedback(f)" #f="ngForm" novalidate>
+    <div class="form-group">
+        <label for="model">Id</label>
+        <input type="number" id="categoria.id" name="categoria.id" [(ngModel)]="categoria.id" #model="ngModel" required class="form-control"
+            readonly>
+        <div *ngIf="f.submitted && model.invalid" class="invalid-feedback">
+            <div *ngIf="model.errors.required">Campo Obrigatório</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="color">Descrição</label>
+        <input type="text" [(ngModel)]="categoria.descricao" id="categoria.descricao" name="categoria.descricao" #color="ngModel" required
+            class="form-control">
+        <div *ngIf="f.submitted && color.invalid" class="invalid-feedback">
+            <div *ngIf="color.errors.required">Campo Obrigatório</div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-add-car">Salvar</button>
+</form>

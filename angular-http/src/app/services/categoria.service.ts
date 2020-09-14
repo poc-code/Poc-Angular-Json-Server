@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { environment } from 'src/environments/environment';
@@ -35,7 +35,7 @@ export class CategoriaService {
       );
   }
   atualizarCategoria(categoria: Categoria): Observable<Categoria> {
-    return this.httpClient.put<Categoria>(environment.urlapi + '/categorias', JSON.stringify(categoria), this.httpOptions)
+    return this.httpClient.put<Categoria>(environment.urlapi + '/categorias/' + categoria.id, JSON.stringify(categoria), this.httpOptions)
       .pipe(
         retry(2)
         , catchError(this.handleError)
@@ -61,4 +61,6 @@ export class CategoriaService {
     console.log(errorMessage);
     return throwError(errorMessage);
   };
+
+   emitirCategoriaAlterada = new EventEmitter<string>();
 }
