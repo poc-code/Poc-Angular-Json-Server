@@ -1,0 +1,99 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "descricao": "Eletronicos"
+    },
+    {
+      "id": 2,
+      "descricao": "games"
+    },
+    {
+      "descricao": "Camisa",
+      "id": 3
+    },
+    {
+      "descricao": "Calças",
+      "id": 4
+    },
+    {
+      "descricao": "Bolsas",
+      "id": 5
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "descricao": "Iphone6S",
+      "preco": 1200.12,
+      "categoriaId": 1
+    }
+  ],
+  "cars": [
+    {
+      "id": 1,
+      "model": "BMW X7",
+      "color": "Preto",
+      "price": 455.95
+    },
+    {
+      "id": 2,
+      "model": "Mercedes benz c180",
+      "color": "Azul",
+      "price": 194.9
+    },
+    {
+      "id": 3,
+      "model": "Land Rover Range Rover Velar",
+      "color": "Branco",
+      "price": 377.38
+    },
+    {
+      "model": "KA",
+      "color": "Barnco",
+      "price": 32000,
+      "id": 8
+    },
+    {
+      "model": "Fiat Toro",
+      "color": "Branco",
+      "price": 99000,
+      "id": 9
+    },
+    {
+      "id": 10,
+      "model": "Santana Quantum",
+      "color": "prata",
+      "price": 12000
+    },
+    {
+      "model": "Camaro Amarelo",
+      "color": "prata",
+      "price": 8000,
+      "id": 11
+    },
+    {
+      "model": "Fiurino",
+      "color": "prata",
+      "price": 14000,
+      "id": 12
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

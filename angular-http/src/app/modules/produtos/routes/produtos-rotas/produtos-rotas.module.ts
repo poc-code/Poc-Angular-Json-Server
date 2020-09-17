@@ -7,6 +7,7 @@ import { EdicaoProdutoComponent } from '../../components/produtos/edicao-produto
 import { DetalheProdutoComponent } from '../../components/produtos/detalhe-produto/detalhe-produto.component';
 import { Routes, RouterModule } from '@angular/router';
 import { InicioProdutoComponent } from '../../components/produtos/inicio-produto/inicio-produto.component';
+import { AddCategoriaComponent } from '../../components/categorias/add-categoria/add-categoria.component';
 
 
 const produtosrotas : Routes = [
@@ -20,6 +21,7 @@ const produtosrotas : Routes = [
         { path: '', component: InicioProdutoComponent },
         { path: 'edicao', component: EdicaoProdutoComponent },
         { path: 'detalhe', component: DetalheProdutoComponent },
+        { path: 'novo', component: AddCategoriaComponent },
       ]
   }
 ];
