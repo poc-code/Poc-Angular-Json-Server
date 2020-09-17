@@ -8,8 +8,9 @@ import { ListaProdutoComponent } from './components/produtos/lista-produto/lista
 import { EdicaoProdutoComponent } from './components/produtos/edicao-produto/edicao-produto.component';
 import { ProdutosRotasModule } from './routes/produtos-rotas/produtos-rotas.module';
 import { InicioProdutoComponent } from './components/produtos/inicio-produto/inicio-produto.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AddCategoriaComponent } from './components/categorias/add-categoria/add-categoria.component';
+import { TooltipModule } from 'ng2-tooltip-directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AddCategoriaComponent } from './components/categorias/add-categoria/add
     CommonModule,
     FormsModule,
     ProdutosRotasModule,
-    NgbModule
+    NgbModule,
+    TooltipModule
   ],
   exports:[
     EdicaoCategoriaComponent

@@ -2,9 +2,7 @@ import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { CategoriaService } from 'src/app/services/categoria.service';
 import { Categoria } from 'src/app/models/categoria';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
-import { NgForm } from '@angular/forms';
-import { unescapeLeadingUnderscores } from 'typescript';
-import { HttpResponseBase } from '@angular/common/http';
+import { TooltipDirective } from 'ng2-tooltip-directive';
 
 @Component({
   selector: 'app-lista-categoria',
