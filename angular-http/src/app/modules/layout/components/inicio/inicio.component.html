@@ -1,1 +1,60 @@
-<router-outlet></router-outlet>
+
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h5>Componentes</h5>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        About
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Pages
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a routerLink="/layout/form">Forms</a>
+                        </li>
+                        <li>
+                            <a routerLink="/layout/tabela">Tables</a>
+                        </li>
+                        <li>
+                            <a routerLink="/layout/confirmacao">Confirmação</a>
+                        </li>
+                        <li>
+                            <a routerLink="/layout/sucesso">Sucesso</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content  -->
+    <div id="content">
+        <router-outlet></router-outlet>
+
+    </div>
+
+</div>
+
