@@ -10,6 +10,7 @@ import { ButtonModule } from 'primeng/button';
 import { CarrosModule } from './modules/carros/carros.module';
 import { ProdutosModule } from './modules/produtos/produtos.module';
 import { HomeModule } from './modules/home/home.module';
+import { LayoutModule } from './modules/layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HomeModule } from './modules/home/home.module';
     CarrosModule,
     ProdutosModule,
     HomeModule,
+    LayoutModule,
     BrowserAnimationsModule,
     DialogModule,
     ButtonModule

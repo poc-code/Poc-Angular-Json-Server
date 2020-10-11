@@ -17,6 +17,10 @@ const routes: Routes = [
     loadChildren:'src/app/modules/home/home.module#HomeModule',
     data: { title: 'Home' }
   },
+  { path:'layout', 
+    loadChildren:'src/app/modules/layout/layout.module#LayoutModule',
+    data: { title: 'Layout' } 
+  },
   { path: '', redirectTo: '/home', pathMatch: 'full'},
 ];
 

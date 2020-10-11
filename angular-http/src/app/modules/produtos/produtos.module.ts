@@ -11,16 +11,18 @@ import { InicioProdutoComponent } from './components/produtos/inicio-produto/ini
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AddCategoriaComponent } from './components/categorias/add-categoria/add-categoria.component';
 import { TooltipModule } from 'ng2-tooltip-directive';
+import { CadastrarProdutoComponent } from './components/produtos/cadastrar-produto/cadastrar-produto.component';
 
 @NgModule({
   declarations: [
+     CadastrarProdutoComponent,
      ListaCategoriaComponent, 
      EdicaoCategoriaComponent,
      DetalheCategoriaComponent, 
      AddCategoriaComponent,
      ListaProdutoComponent, 
      EdicaoProdutoComponent, 
-     InicioProdutoComponent, AddCategoriaComponent
+     InicioProdutoComponent, AddCategoriaComponent, CadastrarProdutoComponent
     ],
   imports: [
     CommonModule,

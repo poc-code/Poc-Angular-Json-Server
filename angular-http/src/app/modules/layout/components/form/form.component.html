@@ -1,0 +1,238 @@
+<div class='container'>
+    <div>
+        <div class='row'>
+            <div class="card" style="width: 60rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Inputs</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Texto</h6>
+                    <div class="form-group  col-md-4">
+                        <label for="input-text">Input Text</label>
+                        <input type="text" id="input-text" name="input-text" required class="form-control"
+                            placeholder="Digite o texto">
+                        <div class="invalid-feedback">
+                            <div>Modelo é obrigatório</div>
+                        </div>
+                    </div>
+                    <h6 class="card-subtitle mb-2 text-muted">Número</h6>
+                    <div class="form-group col-md-4">
+                        <label for="input-number">Input Number</label>
+                        <input type="number" id="input-number" name="input-number" required class="form-control"
+                            placeholder="Digite o numero">
+                        <div class="invalid-feedback">
+                            <div>Preço é obrigatório</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <p></p>
+        <div class="row">
+            <div class="card" style="width: 60rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Caixa de seleção</h5>
+                    <div class="form-group col-md-4">
+                        <label for="input-number">Seleção</label>
+                        <select class="form-control selectpicker" id="select-itens">
+                            <optgroup label="Picnic">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </optgroup>
+                            <optgroup label="Camping">
+                                <option>Tent</option>
+                                <option>Flashlight</option>
+                                <option>Toilet Paper</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <select class="form-control selectpicker" multiple title="Choose one of the following...">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+
+                    </div>
+                    <div class="form-group col-md-4">
+                        <select class="form-control selectpicker">
+                            <option data-icon="fa fa-edit"><i class="fa fa-edit"></i>Ketchup</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <div class="row">
+        <div class="card" style="width:60rem">
+            <div class="card-body">
+                <h5 class="card-title">Checkbox</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Checkbox</h6>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Default checkbox
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                    <label class="form-check-label" for="defaultCheck2">
+                        Disabled checkbox
+                    </label>
+                </div>
+                <p></p>
+                <h6 class="card-subtitle mb-2 text-muted">Radio</h6>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                        value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Default radio
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Second default radio
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                        value="option3" disabled>
+                    <label class="form-check-label" for="exampleRadios3">
+                        Disabled radio
+                    </label>
+                </div>
+                <p></p>
+                <h6 class="card-subtitle mb-2 text-muted">Inline</h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+                </div>
+                <p></p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <div class="row">
+        <div class="card" style="width:60rem">
+            <div class="card-body">
+                <h5 class="card-title">Button Group</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Basic</h6>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary">Left</button>
+                    <button type="button" class="btn btn-secondary">Middle</button>
+                    <button type="button" class="btn btn-secondary">Right</button>
+                </div>
+                <p></p>
+                <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text" id="btnGroupAddon">@</div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Input group example"
+                        aria-label="Input group example" aria-describedby="btnGroupAddon">
+                </div>
+                <div class="input-group" style="padding-top:1%">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text" id="btnGroupAddon"><em class="fa fa-edit"></em></div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="change your text"
+                        aria-label="Input group example" aria-describedby="btnGroupAddon">
+                </div>
+                <div class="input-group" style="padding-top:1%">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text" id="btnGroupAddon"><i class="fa fa-beer" aria-hidden="true"></i> </div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="drink more beer"
+                        aria-label="Input group example" aria-describedby="btnGroupAddon">
+                </div>
+                <p></p>
+                <h6 class="card-subtitle mb-2 text-muted">Vertical</h6>
+                <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-secondary">Left</button>
+                    <button type="button" class="btn btn-secondary">Middle</button>
+                    <button type="button" class="btn btn-secondary">Right</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <div class="row">
+        <div class="card" style="width:60rem">
+            <div class="card-body">
+                <h5 class="card-title">Button Group</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Basic</h6>
+                <p></p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Link with href
+                </a>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Button with data-target
+                </button>
+                <p></p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <div class="row">
+        <div class="card" style="width:60rem">
+            <div class="card-body">
+                <h5 class="card-title">Botões</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Botões</h6>
+                <div class="form-group col-md-12">
+                    <button type="submit" class="btn btn-primary" id="btn-primary">Primary</button>
+                    <button type="reset" class="btn btn-secondary">Secundary</button>
+                    <button type="reset" class="btn btn-warning">Warning</button>
+                    <button type="reset" class="btn btn-danger">Danger</button>
+                    <button type="reset" class="btn btn-success">Success</button>
+                    <button type="reset" class="btn btn-info">Info</button>
+                    <button type="reset" class="btn btn-dark">Dark</button>
+                    <button type="reset" class="btn btn-light">Litght</button>
+                </div>
+                <h6 class="card-subtitle mb-2 text-muted">Botões</h6>
+                <div>
+                    <button class="btn btn-outline-primary" id="btn-primary">Primary</button>
+                    <button class="btn btn-outline-secondary">Secundary</button>
+                    <button class="btn btn-outline-warning">Warning</button>
+                    <button class="btn btn-outline-danger">Danger</button>
+                    <button class="btn btn-outline-success">Success</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

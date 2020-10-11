@@ -8,17 +8,17 @@ import { DetalheProdutoComponent } from '../../components/produtos/detalhe-produ
 import { Routes, RouterModule } from '@angular/router';
 import { InicioProdutoComponent } from '../../components/produtos/inicio-produto/inicio-produto.component';
 import { AddCategoriaComponent } from '../../components/categorias/add-categoria/add-categoria.component';
+import { CadastrarProdutoComponent } from '../../components/produtos/cadastrar-produto/cadastrar-produto.component';
 
 
 const produtosrotas : Routes = [
   {
-      path: '', 
-      component: InicioProdutoComponent,
+      path: '', component: InicioProdutoComponent,
       data: { tittle:'Produtos'},
       children: [
         { path: 'categoria/home', component: ListaCategoriaComponent },
         { path: 'categoria/:id', component: EdicaoCategoriaComponent },
-        { path: '', component: InicioProdutoComponent },
+        { path: '', component: CadastrarProdutoComponent },
         { path: 'edicao', component: EdicaoProdutoComponent },
         { path: 'detalhe', component: DetalheProdutoComponent },
         { path: 'novo', component: AddCategoriaComponent },

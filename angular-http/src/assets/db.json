@@ -33,6 +33,10 @@
     {
       "descricao": "Bolsas",
       "id": 5
+    },
+    {
+      "descricao": "Teste",
+      "id": 6
     }
   ],
   "produtos": [
