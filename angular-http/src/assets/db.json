@@ -31,12 +31,8 @@
       "id": 4
     },
     {
-      "descricao": "Bolsas",
+      "descricao": "Bolsas de Couro",
       "id": 5
-    },
-    {
-      "descricao": "Teste",
-      "id": 6
     }
   ],
   "produtos": [
@@ -45,6 +41,24 @@
       "descricao": "Iphone6S",
       "preco": 1200.12,
       "categoriaId": 1
+    },
+    {
+      "descricao": "Samsung Tab 10",
+      "preco": 1100.12,
+      "categoriaId": 1,
+      "id": 2
+    },
+    {
+      "descricao": "Nintendo Switch",
+      "preco": 2200.12,
+      "categoriaId": 1,
+      "id": 3
+    },
+    {
+      "descricao": "PlayStation 5",
+      "preco": 4500.12,
+      "categoriaId": 1,
+      "id": 4
     }
   ],
   "cars": [
