@@ -20,7 +20,7 @@
     },
     {
       "id": 2,
-      "descricao": "games"
+      "descricao": "Games"
     },
     {
       "descricao": "Camisa",
@@ -33,6 +33,30 @@
     {
       "descricao": "Bolsas de Couro",
       "id": 5
+    },
+    {
+      "descricao": "Almofadas",
+      "id": 6
+    },
+    {
+      "descricao": "Bonés",
+      "id": 7
+    },
+    {
+      "descricao": "Canecas",
+      "id": 8
+    },
+    {
+      "descricao": "Moletons",
+      "id": 9
+    },
+    {
+      "descricao": "Decoração",
+      "id": 10
+    },
+    {
+      "descricao": "Coletes",
+      "id": 11
     }
   ],
   "produtos": [

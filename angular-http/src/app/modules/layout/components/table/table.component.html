@@ -1,5 +1,5 @@
 <p>table works!</p>
-<table datatable [dtOptions]="dtOptions" class="row-border hover">
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
     <thead>
         <tr>
             <th>Id</th>
@@ -11,6 +11,19 @@
         <tr *ngFor="let categoria of categorias">
             <td>{{categoria.id}}</td>
             <td>{{categoria.descricao}}</td>
-            <td></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-block btn-primary">Opções</button>
+                    <button type="button" class="btn btn-primary btn-outline-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item">Editar</a>
+                      <a class="dropdown-item">Remover</a>
+                      <a class="dropdown-item">Produtos</a>
+                    </div>
+                  </div>
+            </td>
         </tr>
     </tbody>
