@@ -1,14 +1,14 @@
 # Poc-Angular-Json-Server
 
-#### Requisitos do projeto 
+### Requisitos do projeto 
 
-### Versão do Angular
+#### Versão do Angular
                 
 Angular CLI: 10.1.0
 Node: 12.18.2
 OS: win32 x64
 
-### Instalação do angular cli
+#### Instalação do angular cli
 
 ```sh
 npm install -g @angular/cli@10.1.0
