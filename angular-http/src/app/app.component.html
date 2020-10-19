@@ -9,7 +9,9 @@
       <ul class="navbar-nav animate side-nav">
         <li class="nav-item">
           <div class="dropdown">
-          <a routerLink="/produtos" routerLinkActive="active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  class="nav-link dropdown-toggle"><i class="fa fa-product-huntr"></i><span class="ttip">Produtos</span></a>
+            <a routerLink="/produtos" routerLinkActive="active" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" class="nav-link dropdown-toggle"><i class="fa fa-product-huntr"></i><span
+                class="ttip">Produtos</span></a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
               <button routerLink="/produtos/categoria/home" class="dropdown-item" type="button">Categorias</button>
               <button class="dropdown-item" type="button">Another action</button>
@@ -18,24 +20,28 @@
           </div>
         </li>
         <li class="nav-item">
-          <a routerLink="/carros" routerLinkActive="active" class="nav-link"><i class="fas fa-cart-plus" aria-hidden="true"></i><span class="ttip">Carros</span></a>
+          <a routerLink="/carros" routerLinkActive="active" class="nav-link"><i class="fas fa-cart-plus"
+              aria-hidden="true"></i><span class="ttip">Carros</span></a>
         </li>
       </ul>
       <ul class="navbar-nav ml-md-auto d-md-flex">
         <li class="nav-item">
-          <div class="dropdown">
-          <a routerLinkActive="active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  class="nav-link dropdown-toggle"><i class="fa fa-cogs" aria-hidden="true"></i><span class="ttip">Config</span></a>
+          <a class="nav-link" href="#"><i class="fas fa-user"  aria-hidden="true"></i> Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-key" aria-hidden="true"></i> Logout</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown dropleft">
+            <a routerLinkActive="active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              class="nav-link dropdown-toggle"><i class="fa fa-cogs" aria-hidden="true"></i></a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button routerLink="/layout/form" class="dropdown-item" type="button">Formularios</button>
-              <button routerLink="/layout/tabela"  class="dropdown-item" type="button">Tabelas</button>
+              <h6 class="dropdown-header">Componentes de página</h6>
+              <div class="dropdown-divider"></div>
+              <button routerLink="/layout/form" class="dropdown-item left" type="button">Formularios</button>
+              <button routerLink="/layout/tabela" class="dropdown-item" type="button">Tabelas</button>
             </div>
           </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-user"></i> Profile</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-key"></i> Logout</a>
         </li>
       </ul>
     </div>

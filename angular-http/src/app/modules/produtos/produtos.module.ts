@@ -22,7 +22,9 @@ import { CadastrarProdutoComponent } from './components/produtos/cadastrar-produ
      AddCategoriaComponent,
      ListaProdutoComponent, 
      EdicaoProdutoComponent, 
-     InicioProdutoComponent, AddCategoriaComponent, CadastrarProdutoComponent
+     InicioProdutoComponent, 
+     AddCategoriaComponent, 
+     CadastrarProdutoComponent
     ],
   imports: [
     CommonModule,

@@ -11,6 +11,7 @@ import { CarrosModule } from './modules/carros/carros.module';
 import { ProdutosModule } from './modules/produtos/produtos.module';
 import { HomeModule } from './modules/home/home.module';
 import { LayoutModule } from './modules/layout/layout.module';
+import { TooltipModule } from 'ng2-tooltip-directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { LayoutModule } from './modules/layout/layout.module';
     LayoutModule,
     BrowserAnimationsModule,
     DialogModule,
-    ButtonModule
+    ButtonModule,
+    TooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
