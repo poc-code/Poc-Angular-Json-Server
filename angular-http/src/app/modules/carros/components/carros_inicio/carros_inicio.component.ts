@@ -5,11 +5,11 @@ import { CarService } from 'src/app/services/car.service';
 
 @Component({
   selector: 'app-inicio',
-  templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
+  templateUrl: './carros_inicio.component.html',
+  styleUrls: ['./carros_inicio.component.css']
 })
 
-export class InicioComponent implements OnInit {
+export class CarrosInicioComponent implements OnInit {
 
   car = {} as Car;
   cars: Car[];

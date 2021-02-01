@@ -8,8 +8,9 @@ import { LayoutRotasModule } from './routes/layout-rotas/layout-rotas.module';
 import { CategoriaService } from 'src/app/services/categoria.service';
 import { DataTablesModule } from 'angular-datatables';
 import { TooltipModule } from 'ng2-tooltip-directive';
-import { InicioComponent } from '../carros/components/inicio/inicio.component';
 import { SucessoComponent } from './components/sucesso/sucesso.component';
+import { ModalModule } from '../shared/modal/modal.module';
+import { InicioComponent } from './components/inicio/inicio.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SucessoComponent } from './components/sucesso/sucesso.component';
     CommonModule,
     DataTablesModule,
     LayoutRotasModule,
-    TooltipModule
+    TooltipModule,
+    ModalModule
   ],
   providers: [
     ProdutoService,

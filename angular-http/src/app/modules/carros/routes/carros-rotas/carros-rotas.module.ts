@@ -1,8 +1,8 @@
 import { EdicaoComponent } from './../../components/edicao/edicao.component';
-import { InicioComponent } from './../../components/inicio/inicio.component';
 import { Routes, RouterModule } from '@angular/router';
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { HomeComponent } from '../../components/home/home.component';
+import { CarrosInicioComponent } from '../../components/carros_inicio/carros_inicio.component';
 
 const carrosrotas : Routes =[
   {
@@ -11,7 +11,7 @@ const carrosrotas : Routes =[
     data: { tittle:'Inicio'},
     children:[
       { path:':id/edicao',component: EdicaoComponent},
-      { path:'inicio',component: InicioComponent},
+      { path:'inicio',component: CarrosInicioComponent},
       { path: '', pathMatch: 'full', redirectTo: 'inicio' },
     ]
   }
